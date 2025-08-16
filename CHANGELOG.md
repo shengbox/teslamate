@@ -13,6 +13,9 @@
 - feat(nix): use datasources.settings.datasources to allow merging Grafana sources from multiple modules (#4870 - @JakobLichterfeld)
 - fix(nix): correctly set default Grafana dashboard path (#4870 - @JakobLichterfeld)
 - feat(nix): allow disabling default Grafana dashboard with setDefaultDashboard option (#4870 - @JakobLichterfeld)
+- fix: set descent and ascent to 0 when out of bounds (> 32767 meters) to ensure migration succeeds (#4882 - @swiffer)
+- feat: use Grafana 12.1.1 (#4886 - @swiffer)
+- feat(webview): update wording to View car location on Google Maps for clarity (#4875 - @JakobLichterfeld)
 
 #### Build, CI, internal
 
@@ -23,6 +26,7 @@
 - build(deps): bump ecto_sql from 3.12.1 to 3.13.2 (#4863)
 - build(deps): update flake.lock (#4867)
 - build(deps): bump phoenix_ecto from 4.6.4 to 4.6.5 (#4862)
+- build(deps): update flake.lock (#4881)
 
 #### Dashboards
 
